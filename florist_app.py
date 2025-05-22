@@ -54,14 +54,13 @@ elif halaman == "𝐏𝐫𝐨𝐟𝐢𝐥 𝐏𝐞𝐦𝐞𝐬𝐚𝐧":
     kontak = st.text_input("Nomor WhatsApp")
     alamat = st.text_area("Alamat Pengiriman")
     if nama and kontak and alamat:
-        st.success("Data profil tersimpan.")
         st.session_state['profil'] = {
             "nama": nama,
             "kontak": kontak,
             "alamat": alamat
         }
     if st.button("✅ Simpan Data"):
-        st.success("Data pribadi di simpan.")
+        st.success("Data profil di simpan.")
 
 # --- HALAMAN PEMESANAN ---
 elif halaman == "𝐏𝐞𝐦𝐞𝐬𝐚𝐧𝐚𝐧":
